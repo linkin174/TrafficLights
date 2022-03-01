@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         for light in trafficLights {
-            light.layer.cornerRadius = (light.frame.width) / 2
+            light.layer.cornerRadius = light.frame.height / 2
             light.alpha = lightOff
         }
         switchButton.layer.cornerRadius = 16
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     //MARK: IB Actions
     @IBAction func switchButtonPressed(_ sender: Any) {
-        
+
         for light in trafficLights {
             light.alpha = lightOff
         }
