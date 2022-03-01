@@ -36,8 +36,8 @@
                                 <rect key="frame" x="154" y="64" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="00e-SQ-RUM"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="FGv-Lf-xwp"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="00e-SQ-RUM"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="FGv-Lf-xwp"/>
                                     <constraint firstAttribute="height" constant="120" id="Vko-WB-NIa"/>
                                     <constraint firstAttribute="width" constant="120" id="Wl3-Bg-VWk"/>
                                 </constraints>
@@ -46,8 +46,8 @@
                                 <rect key="frame" x="154" y="214" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="LUU-ZT-Ukg"/>
-                                    <constraint firstAttribute="width" constant="120" id="kK5-CM-a40"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="LUU-ZT-Ukg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="kK5-CM-a40"/>
                                 </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyN-fN-6Jm">
@@ -55,7 +55,7 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="IO9-5J-Fey"/>
-                                    <constraint firstAttribute="height" constant="120" id="MBT-jM-Ytr"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="MBT-jM-Ytr"/>
                                 </constraints>
                             </view>
                         </subviews>
