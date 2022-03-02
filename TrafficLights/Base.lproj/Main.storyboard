@@ -17,11 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF9-he-esw">
-                                <rect key="frame" x="154" y="772" width="120" height="60"/>
+                                <rect key="frame" x="154" y="802" width="120" height="50"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="YPm-0A-A4C"/>
-                                    <constraint firstAttribute="height" constant="60" id="oy8-WJ-s2a"/>
+                                    <constraint firstAttribute="height" constant="50" id="oy8-WJ-s2a"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -33,54 +33,44 @@
                                 </connections>
                             </button>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogC-uA-vut">
-                                <rect key="frame" x="154" y="64" width="120" height="120"/>
+                                <rect key="frame" x="154" y="60" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="00e-SQ-RUM"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="FGv-Lf-xwp"/>
-                                    <constraint firstAttribute="height" constant="120" id="Vko-WB-NIa"/>
-                                    <constraint firstAttribute="width" constant="120" id="Wl3-Bg-VWk"/>
+                                    <constraint firstAttribute="height" constant="120" id="BrB-gb-LKx"/>
+                                    <constraint firstAttribute="width" constant="120" id="rNj-ZB-5y1"/>
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1a-Sd-QKo">
-                                <rect key="frame" x="154" y="214" width="120" height="120"/>
+                                <rect key="frame" x="154" y="210" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="LUU-ZT-Ukg"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="kK5-CM-a40"/>
-                                </constraints>
                             </view>
                             <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyN-fN-6Jm">
-                                <rect key="frame" x="154" y="364" width="120" height="120"/>
+                                <rect key="frame" x="154" y="360" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="IO9-5J-Fey"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="MBT-jM-Ytr"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
-                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="height" secondItem="K1a-Sd-QKo" secondAttribute="height" id="1Pc-h5-ONr"/>
-                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2KA-Nd-qQ7"/>
-                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="top" secondItem="K1a-Sd-QKo" secondAttribute="bottom" constant="30" id="2KP-gQ-sqU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VF9-he-esw" secondAttribute="bottom" constant="60" id="4Gg-pK-PPa"/>
-                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YjQ-HT-780"/>
-                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="height" secondItem="ogC-uA-vut" secondAttribute="height" id="cZK-fm-C7H"/>
-                            <constraint firstItem="ogC-uA-vut" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nne-8l-FMh"/>
-                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="width" secondItem="ogC-uA-vut" secondAttribute="width" id="nvF-mV-rVK"/>
-                            <constraint firstItem="ogC-uA-vut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="twr-D8-fRm"/>
-                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="width" secondItem="K1a-Sd-QKo" secondAttribute="width" id="ufR-E0-VjY"/>
-                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="top" secondItem="ogC-uA-vut" secondAttribute="bottom" constant="30" id="vbA-0j-IXj"/>
+                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="height" secondItem="K1a-Sd-QKo" secondAttribute="height" id="5VE-aI-a35"/>
+                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="height" secondItem="ogC-uA-vut" secondAttribute="height" id="6jE-Ba-lcu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VF9-he-esw" secondAttribute="bottom" constant="40" id="7GJ-mP-z0g"/>
+                            <constraint firstItem="ogC-uA-vut" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Ggt-p6-IBc"/>
+                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QEC-DB-4ZH"/>
+                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="top" secondItem="ogC-uA-vut" secondAttribute="bottom" constant="30" id="dPZ-X6-sba"/>
+                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eBE-34-wRS"/>
+                            <constraint firstItem="ogC-uA-vut" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hJp-bY-rNM"/>
+                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="width" secondItem="K1a-Sd-QKo" secondAttribute="width" id="vIR-yV-P1v"/>
+                            <constraint firstItem="pyN-fN-6Jm" firstAttribute="top" secondItem="K1a-Sd-QKo" secondAttribute="bottom" constant="30" id="wBO-qU-QJ3"/>
+                            <constraint firstItem="K1a-Sd-QKo" firstAttribute="width" secondItem="ogC-uA-vut" secondAttribute="width" id="xEJ-Ey-gKH"/>
                             <constraint firstItem="VF9-he-esw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yNO-1b-VA7"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenLight" destination="pyN-fN-6Jm" id="YYo-DO-B4j"/>
-                        <outlet property="redLight" destination="ogC-uA-vut" id="SU2-U2-ndA"/>
                         <outlet property="switchButton" destination="VF9-he-esw" id="uaH-fH-g7B"/>
-                        <outlet property="yellowLight" destination="K1a-Sd-QKo" id="19h-up-gIs"/>
+                        <outletCollection property="trafficLights" destination="ogC-uA-vut" collectionClass="NSMutableArray" id="sis-Vg-aUJ"/>
+                        <outletCollection property="trafficLights" destination="K1a-Sd-QKo" collectionClass="NSMutableArray" id="ANK-OX-7yD"/>
+                        <outletCollection property="trafficLights" destination="pyN-fN-6Jm" collectionClass="NSMutableArray" id="YDf-TT-wwf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,43 +8,49 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var greenLight: UIView!
-    @IBOutlet var yellowLight: UIView!
-    @IBOutlet var redLight: UIView!
-
+    
+    //MARK: IB Outlets
+    @IBOutlet var trafficLights: [UIView]!
     @IBOutlet var switchButton: UIButton!
-
+   
+    //MARK: Private properties
+    private var currentPosition = 0
+    private let lightOn: CGFloat = 1
+    private let lightOff: CGFloat = 0.3
+    
+    //MARK: Life Cycle Methods
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-
-        let lights = [redLight, yellowLight, greenLight]
-        for light in lights {
-            light?.layer.cornerRadius = (light?.frame.width)! / 2
-            light?.alpha = 0.3
+        for light in trafficLights {
+            light.layer.cornerRadius = (light.frame.width) / 2
+            light.alpha = lightOff
         }
-
         switchButton.layer.cornerRadius = 16
         switchButton.setTitle("START", for: .normal)
     }
-
-    var counter = 0
-
+    
+    //MARK: IB Actions
     @IBAction func switchButtonPressed(_ sender: Any) {
-        switchButton.setTitle("NEXT", for: .normal)
-        let lights = [redLight, yellowLight, greenLight]
-        switch lights[counter] {
-        case redLight:
-            redLight.alpha = 1
-            greenLight.alpha = 0.3
-            counter = lights.index(after: counter)
-        case yellowLight:
-            yellowLight.alpha = 1
-            redLight.alpha = 0.3
-            counter = lights.index(after: counter)
-        case greenLight:
-            greenLight.alpha = 1
-            yellowLight.alpha = 0.3
-            counter = lights.startIndex
+        
+        for light in trafficLights {
+            light.alpha = lightOff
+        }
+        
+        if switchButton.titleLabel?.text == "START" {
+            switchButton.setTitle("NEXT", for: .normal)
+        }
+        
+        switch currentPosition {
+        case 0:
+            trafficLights[currentPosition].alpha = lightOn
+            currentPosition += 1
+        case 1:
+            trafficLights[currentPosition].alpha = lightOn
+            currentPosition += 1
+        case 2:
+            trafficLights[currentPosition].alpha = lightOn
+            currentPosition = trafficLights.startIndex
         default: break
         }
     }
